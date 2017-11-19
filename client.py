@@ -1,9 +1,11 @@
 import socket
 
 def Main():
+
 	hostname='node-1'
 	hostip=socket.gethostbyname(hostname)
 	port = 12345
+	print("Connect to "+hostname+' with IP '+str(hostip)+' on port '+str(port)) 
 	mySocket = socket.socket()
 	mySocket.connect((hostip,port))
 	message = input(" ? ")
