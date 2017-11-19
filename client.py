@@ -1,8 +1,8 @@
 import socket
 
 def Main():
-    host = '127.0.0.1'
-    port = 5001
+    host = '192.168.192.37'
+    port = 12345
     mySocket = socket.socket()
     mySocket.connect((host,port))
     message = input(" ? ")
