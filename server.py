@@ -3,8 +3,8 @@ import time
 
 
 def Main():
-    host = "127.0.0.1"
-    port = 5001
+    host = ""
+    port = 12345
     mySocket = socket.socket()
     mySocket.bind((host,port))
     mySocket.listen(1)
@@ -20,6 +20,5 @@ def Main():
         data = input(" ? ")
         conn.send(data.encode())
     conn.close()
-                
 if __name__ == '__main__':
     Main()
